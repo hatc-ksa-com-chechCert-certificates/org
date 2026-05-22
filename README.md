@@ -1,4 +1,4 @@
-#<head>
+<head>
     <meta name="viewport" content="width=1200">
     <meta charset="UTF-8">
     <title>Certificate Verification</title>
