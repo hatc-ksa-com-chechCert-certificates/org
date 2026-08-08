@@ -16,7 +16,7 @@
         }
         
         .wrapper {
-            width: 1000px !important; 
+            width: 1200px !important; 
             margin: 0 auto !important;
             padding: 10px 20px !important; 
             box-sizing: border-box !important;
@@ -41,7 +41,7 @@
         }
         
         .instruction { 
-            font-size: 20px; 
+            font-size: 21px; 
             font-weight: normal !important; 
             color: #000; 
             margin-top: 5px;
@@ -84,7 +84,7 @@
             display: none;
             border: 2px solid #000;
             border-radius: 35px; 
-            padding: 40px 60px;
+            padding: 30px 50px;
             box-sizing: border-box !important;
             background: #fff;
             width: 85% !important; 
@@ -110,13 +110,14 @@
         } 
         
         .result-table td { 
-            padding: 14px 0px; 
+            padding: 4px 0px !important; /* 👈 এখানে আগে ১৪ পিক্সেল ছিল, কমিয়ে ৪ পিক্সেল করা হলো যা ওপর-নিচের গ্যাপ কমাবে */
             font-size: 22px; 
             color: #000; 
             vertical-align: bottom; 
             font-weight: normal !important; 
             box-sizing: border-box; 
             text-align: left !important; 
+            line-height: 1.1 !important; /* 👈 প্রতিটি লাইনের ভেতরের স্পেস একদম চিপচিপে করার জন্য */
         }
         
         /* 🎯 বাম পাশের কলামের টেক্সট ব্লক */
@@ -124,7 +125,7 @@
             display: block;
             width: 175px !important; 
             border-bottom: 2px solid #808080 !important;
-            padding-bottom: 3px;
+            padding-bottom: 1px; /* 👈 আন্ডারলাইনের সাথে লেখার গ্যাপ ৩ থেকে কমিয়ে ১ পিক্সেল করা হলো */
             white-space: nowrap;
         } 
         
@@ -133,7 +134,7 @@
             display: block;
             width: 480px !important; 
             border-bottom: 2px solid #808080 !important;
-            padding-bottom: 3px;
+            padding-bottom: 1px; /* 👈 আন্ডারলাইনের সাথে লেখার গ্যাপ ৩ থেকে কমিয়ে ১ পিক্সেল করা হলো */
             word-break: break-word;
         }
 
@@ -198,7 +199,7 @@
 
     <div class="wrapper">
         
-        <img src="Header_2.png" class="top-logo" alt="Institute Logo">
+        <img src="./jobaid.png" class="top-logo" alt="Institute Logo">
         
         <hr class="header-divider">
 
@@ -295,7 +296,7 @@
     </div>
 
     <script>
-        const appsScriptUrl = "https://script.google.com/macros/s/AKfycbws3q4xMAVz8pQ-9bSpZ-v_5sjej-JxStSEHxCgI9kt08umAcNCUgPgRWgDCPdMwMcP/exec";
+        const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwg0eaKlU3iMIseLExlnFczvNqOsnF4ERMLVjiYJ--8-K3nCDGaw2zloyv5Or5mmyjc/exec";
 
         function formatDate(dateStr) {
             if (!dateStr) return '';
